@@ -51,7 +51,7 @@ function myOnLoad()
 <xsl:sort select="@severity"/>
 
 <xsl:variable name="file"><xsl:value-of select="concat(@file, ':', @line)" /></xsl:variable>
-<xsl:variable name="fileLink"><xsl:value-of select="concat('https://stash.motiondsp.com/projects/IKENA/repos/ikena-isr/browse/', substring(translate(@file, '\', '/'), 18), '#', @line)" /></xsl:variable>
+<xsl:variable name="fileLink"><xsl:value-of select="concat('https://bitbucket.motiondsp.com/projects/IKENA/repos/ikena-isr/browse/', substring(translate(@file, '\', '/'), 18), '#', @line)" /></xsl:variable>
 <xsl:variable name="clr">
 <xsl:choose>
 <xsl:when test="@severity='error'">
